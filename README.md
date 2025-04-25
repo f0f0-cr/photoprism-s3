@@ -1,4 +1,7 @@
-Minio and photoprism, both running in the same VM:
+# Minio S3 and photoprism, both running in the same VM with containers:
+
+## You need S3FS on the VM where you will run the containers
+[https://github.com/s3fs-fuse/s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse)
 
 ## Create Minio
 ``docker run -p 9001:9001 --hostname minio --name minio -v minio:/data quay.io/minio/minio server /data --console-address ":9001"``
