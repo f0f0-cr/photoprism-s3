@@ -15,7 +15,9 @@ echo "ACCESS_KEY:SECRET_KEY" | sudo tee /home/${USER}/.passwd-s3fs
 ```
 
 ## Add some security
+```
 chmod 600 /home/${USER}/.passwd-s3fs
+```
 
 ## Mount the bucket
 #### Create mount point
