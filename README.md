@@ -20,6 +20,7 @@ chmod 600 /home/${USER}/.passwd-s3fs
 ``s3fs photoprism /photoprism/originals -o passwd_file=/home/${USER}/.passwd-s3fs,use_path_request_style,url=http://localhost:9000``
 
 ## Create photoprism  container
+```
 docker rm -f photoprism;docker run -d \
   --name photoprism --hostname photoprism \
   -p 2342:2342 \
@@ -27,3 +28,4 @@ docker rm -f photoprism;docker run -d \
   -v /photoprism/storage:/photoprism/storage \
   -e PHOTOPRISM_ADMIN_PASSWORD="admin" \
   photoprism/photoprism:latest
+```
