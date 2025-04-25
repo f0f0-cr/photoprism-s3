@@ -22,7 +22,7 @@ chmod 600 /home/${USER}/.passwd-s3fs
 ## Mount the bucket
 #### Create mount point
 ```
-mkdir /photoprism/originals
+mkdir -p /photoprism/originals
 ```
 #### Mount the bucket
 ```
